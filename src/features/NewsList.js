@@ -21,7 +21,9 @@ function NewsList() {
     />
   );
 
-  console.log('mamata71 news', newsData);
+  const keyExtractor = (item, index) => item.publishedAt + index;
+
+  const ItemSeparator = () => <View style={styles.itemSeparator} />;
 
   return (
     <View style={styles.container}>
@@ -36,9 +38,9 @@ function NewsList() {
         data={newsData}
         inverted={true}
         renderItem={renderItem}
-        keyExtractor={item => item.title}
+        keyExtractor={keyExtractor}
         contentContainerStyle={styles.listContent}
-        ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
+        ItemSeparatorComponent={ItemSeparator}
         onEndReached={loadNextNews}
         initialNumToRender={itemsPerPage}
       />

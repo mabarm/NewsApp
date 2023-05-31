@@ -3,9 +3,7 @@ const storeNewsData = async data => {
   try {
     const serializedData = JSON.stringify(data);
     await AsyncStorage.setItem('newsData', serializedData);
-  } catch (error) {
-    console.log('Error storing news data:', error);
-  }
+  } catch (error) {}
 };
 
 export {storeNewsData};

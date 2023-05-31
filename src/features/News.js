@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16 * commonStyles.mpx,
     fontWeight: 'bold',
+    color: 'black',
   },
   rightActionContainer: {
     flexDirection: 'row',
