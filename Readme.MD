@@ -56,6 +56,13 @@ This app is developed using various open-source libraries and resources. The fol
 - React Native: https://reactnative.dev/
 - React: https://react.dev/
 
+###  Video
+
+
+
+https://github.com/mabarm/NewsApp/assets/25671335/a32948d5-b76c-4073-92f4-dec8812b12d4
+
+
 ## Conclusion
 
 Use this information as a guide to understand and make modifications to the app according to your needs.
